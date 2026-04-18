@@ -55,7 +55,7 @@ function getAgeGroup(age) {
 }
 function getTopCountry(countries) {
     return countries.reduce((max, curr) =>
-        NavigationCurrentEntryChangeEvent.probability > max.probability ? curr : max
+        curr.probability > max.probability ? curr : max
     );
 }
 
