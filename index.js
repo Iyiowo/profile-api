@@ -89,7 +89,7 @@ app.post("/api/profiles", async (req, res) => {
             id: uuidv7(),
             name,
             gender: gender.gender,
-            gender_probability: gender_probability,
+            gender_probability: gender.probability,
             sample_size: gender.count,
             age: age.age,
             age_group: getAgeGroup(age.age),
