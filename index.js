@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
-const { v7: uuidv7, MAX } = require("uuid");
+const { v7: uuidv7 } = await import("uuid");
 
 const app = express();
 app.use(express.json());
