@@ -120,7 +120,7 @@ app.post("/api/profiles", async (req, res) => {
 });
 
 app.get("/api/profiles/:id", (req, res) => {
-    const profile = profile.find(p => p.id === req.params.id);
+    const profile = profiles.find(p => p.id === req.params.id);
 
     if (!profile) {
         return res.status(404).json({
