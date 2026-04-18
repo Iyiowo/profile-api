@@ -114,7 +114,7 @@ app.post("/api/profiles", async (req, res) => {
         }
         res.status(500).json({
             status: "error",
-            message: "Server error"
+            message: err.message
         });
     }
 });
