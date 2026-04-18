@@ -98,7 +98,7 @@ app.post("/api/profiles", async (req, res) => {
             created_at: new Date().toISOString()
         };
 
-        profile.push(profile);
+        profiles.push(profile);
 
         res.status(201).json({
             status: "success",
