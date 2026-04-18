@@ -134,7 +134,7 @@ app.get("/api/profiles/:id", (req, res) => {
     });
 });
 
-app.get("/api/proflies", (req, res) => {
+app.get("/api/profiles", (req, res) => {
     let result = [...profiles];
 
     const { gender, country_id, age_group } = req.query;
